@@ -15,12 +15,19 @@ public class BukuMain09 {
         bk1.gantiHarga(60000);
         bk1.tampilInformasi();
 
+        System.out.println("========================");
         Buku09 bk2 = new Buku09("Self Reward", "Maheer Ayesha", 160, 29, 59000);
         bk2.terjual(11);
         bk2.tampilInformasi();
+        System.out.println("Harga Total : Rp " + bk2.hitungHargaTotal(11));
+        System.out.println("Diskon : Rp " + bk2.hitungDiskon(11));
+        System.out.println("Harga bayar : Rp " + bk2.hitungHargaBayar(11));
 
+        System.out.println("========================");
         Buku09 buku09 = new Buku09("Tips sukses secara kebetulan", "Komeng", 2, 200, 79000);
-        buku09.terjual(160);
+        buku09.terjual(16);
         buku09.tampilInformasi();
+       
+
     }
 }
