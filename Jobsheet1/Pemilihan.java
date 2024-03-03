@@ -62,17 +62,18 @@ public class Pemilihan {
 
         String statusLulus;
         if (nilaiHuruf.equals("A") || nilaiHuruf.equals("B+") || nilaiHuruf.equals("B") || nilaiHuruf.equals("C+") || nilaiHuruf.equals("C")) {
-            statusLulus = "LULUS";
+            statusLulus = "SELAMAT ANDA LULUS";
         } else {
-            statusLulus = "TIDAK LULUS";
+            statusLulus = " ANDA TIDAK LULUS";
         }
 
         System.out.println("Nilai akhir: " + nilaiAkhir);
         System.out.println("Nilai huruf: " + nilaiHuruf);
         System.out.println("Keterangan: " + keterangan);
-        System.out.println("Status: " + statusLulus);
+        System.out.println("=========================");
+        System.out.println(statusLulus);
 
 
-        
+        input.close();
     }
 }
